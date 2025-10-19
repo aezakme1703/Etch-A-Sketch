@@ -8,10 +8,43 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="screen">
-        <div id="main__block"></div>
-        <button class="btn">Обновить</button>
-    </div>
+    <header class="header">
+        <div class="container">
+            <img class="header__logo" src="images/icon1.png" alt="">
+            <h1 class="header__title">Random Grid</h1>
+        </div>
+    </header>
 
+    <section class="main">
+        <div class="container">
+            <div class="main__left">
+                <p class="main__text">Just hover over any cell and it will change color randomly</p>
+                <div class="main__btn">
+                    <button class="btn btn-resize">Grid size</button>
+                    <button class="btn btn-reload">Clear the grid</button>
+                </div>
+            </div>
+
+            <div id="main__block"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contacts">
+                <h2 class="footer__text">CONTACTS</h2>
+                <nav class="footer__blockLink">
+                    <a class="footer__link" href="https://t.me/aezakme1703">Telegram</a>
+                    <a class="footer__link" href="https://www.instagram.com/aezakme1703/">Instagram</a>
+                    <a class="footer__link" href="https://www.youtube.com/@aezakme1703">Youtube</a>
+                </nav>
+            </div>
+            <a href="https://ibb.co/MkyWgtRK" class="footer__logo">æ</a>
+            <div class="footer__desc"> 
+                <p>© Created by aezakme</p>
+                <p>The Odin Project 2025</p>
+                <p>Etch A Sketch </p>
+            </div>
+    </footer>
 </body>
 </html>
