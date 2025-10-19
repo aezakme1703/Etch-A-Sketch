@@ -50,7 +50,7 @@ btnResize.addEventListener('click', () => {
         gridSize = 12
     }
     else{
-        let newSize = parseInt(input)
+        let newSize = parseInt(input)   
         while (newSize > 40 || newSize < 1){
             input = prompt(`Превышен лимит размерности сетки. Повтороно введите размер сетки (1 - 40):`)
             if (input === null || isNaN(parseInt(input))){
@@ -59,7 +59,9 @@ btnResize.addEventListener('click', () => {
             }
             newSize = parseInt(input)
         }
-        gridSize = newSize
+        if (newSize >= 1 && newSize <= 40) {
+            gridSize = newSize
+        }
     }
 
     createElement(gridSize)
