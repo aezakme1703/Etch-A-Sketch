@@ -1,6 +1,20 @@
 
+.screen{
 
-#container {
+}
+.btn{
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: green;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+}
+#main__block {
     border-radius: 10px;
     border: 3px solid rgba(81, 133, 230, 0.8);
     padding: 0;
@@ -8,7 +22,7 @@
     background-color: rgba(175, 232, 166, 0.452);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     max-width: 1000px;
     max-height: 1000px;
     margin: 0 auto;
@@ -33,25 +47,3 @@
     box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
     z-index: 1;
 }
-
-
-
-/* .line {
-    display: flex;
-    flex: 1;        
-    width: 100%; 
-    overflow: hidden;
-    }
-
-.column {
-    flex: 1;               
-    height: 100%;          
-    transition: transform 0.4s ease, box-shadow 0.4s ease; 
-    }
-
-
-.column:hover {
-    transform: translateY(-2px); 
-    box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.5); 
-    z-index: 1; 
-} */

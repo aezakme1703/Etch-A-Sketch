@@ -1,4 +1,5 @@
-const container = document.getElementById("container")
+const container = document.getElementById("main__block")
+const btnReload = document.querySelector(".btn")
 
 function createElement(num){
 
@@ -12,9 +13,10 @@ function createElement(num){
             line.appendChild(column)
         }
         container.appendChild(line)
-
+        
         line.addEventListener('mouseover', e => {
             if (e.target !== line){
+                
                 const randColor = `rgb(
                     ${Math.floor(Math.random() * 256)},
                     ${Math.floor(Math.random() * 256)},
@@ -26,6 +28,14 @@ function createElement(num){
 
     }
 }
+
+// Обработчик для кнопки сброса
+btnReload.addEventListener('click', () => {
+    const columns = document.querySelectorAll('.column');
+    columns.forEach(column => {
+        column.style.backgroundColor = '';
+    });
+});
 
 let grid = prompt(`Введите размер сетки (до 100):`)
 while (grid > 100){
